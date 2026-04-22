@@ -21,7 +21,7 @@ public class Patio {
     }
 
     public void mostrar() {
-        System.out.println("\n📦 Estado del Patio:");
+        System.out.println("\n Estado del Patio:");
         for (int i = 0; i < patio.length; i++) {
             for (int j = 0; j < patio[i].length; j++) {
                 if (patio[i][j] == null) {

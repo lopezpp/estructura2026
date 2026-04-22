@@ -10,7 +10,7 @@ public class Buque {
 
         if (pila.isEmpty()) {
             pila.push(nuevo);
-            System.out.println("✅ Cargado al buque");
+            System.out.println(" Cargado al buque");
             return;
         }
 
@@ -18,9 +18,9 @@ public class Buque {
 
         if (nuevo.peso <= tope.peso) {
             pila.push(nuevo);
-            System.out.println("✅ Cargado al buque");
+            System.out.println(" Cargado al buque");
         } else {
-            System.out.println("❌ Rechazado: rompe estabilidad (más pesado que el tope)");
+            System.out.println(" Rechazado: rompe estabilidad (más pesado que el tope)");
         }
     }
 
@@ -28,12 +28,12 @@ public class Buque {
         if (pila.isEmpty()) {
             System.out.println("Buque vacío");
         } else {
-            System.out.println("🚢 Retirado: " + pila.pop());
+            System.out.println(" Retirado: " + pila.pop());
         }
     }
 
     public void mostrar() {
-        System.out.println("\n🚢 Estado del buque:");
+        System.out.println("\n Estado del buque:");
         if (pila.isEmpty()) {
             System.out.println("Vacío");
             return;

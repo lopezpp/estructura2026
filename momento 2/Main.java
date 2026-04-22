@@ -29,7 +29,7 @@ public class Main {
         int opcion;
 
         do {
-            System.out.println("\n===== 🚢 DATA-BAY SYSTEM =====");
+            System.out.println("\n=====  DATA-BAY SYSTEM =====");
             System.out.println("1. Registrar y enviar al patio");
             System.out.println("2. Enviar a inspección");
             System.out.println("3. Procesar inspección");
@@ -47,7 +47,7 @@ public class Main {
                 case 1:
                     Contenedor c1 = crearContenedor();
                     if (!patio.insertar(c1)) {
-                        System.out.println("⚠️ Puerto Saturado");
+                        System.out.println(" Puerto Saturado");
                     }
                     break;
 

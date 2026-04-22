@@ -9,19 +9,19 @@ public class Inspeccion {
 
     public void agregar(Contenedor c) {
         cola.add(c);
-        System.out.println("➡️ Enviado a inspección: " + c.id);
+        System.out.println(" Enviado a inspección: " + c.id);
     }
 
     public void procesarUno() {
         if (cola.isEmpty()) {
             System.out.println("No hay contenedores en inspección.");
         } else {
-            System.out.println("🔍 Inspeccionado: " + cola.poll());
+            System.out.println(" Inspeccionado: " + cola.poll());
         }
     }
 
     public void mostrar() {
-        System.out.println("\n🚦 Cola de inspección:");
+        System.out.println("\n Cola de inspección:");
         if (cola.isEmpty()) {
             System.out.println("Vacía");
             return;
